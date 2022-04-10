@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import React from 'react';
 
 function loadScript(src) {
   return new Promise((resolve) => {
@@ -62,16 +63,16 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Donate some Money to Akash Bajpai Foundation
         </p>
-        <a
+        <button
           className="App-link"
           onClick={displayRazorpay}
           target="_blank"
           rel="noopener noreferrer"
         >
           Donate ₹500
-        </a>
+        </button>
       </header>
     </div>
   );
